@@ -1,0 +1,13 @@
+TAG - tag em cima da cabeca e no TAB
+
+Comandos:
+  /tag lista               mostra as tags que voce pode usar
+  /tag <nome>              escolhe uma tag
+  /tag remover             volta para a tag automatica/padrao
+  /tag dar <jogador> <tag> (admin) define a tag de alguem, mesmo sem permissao
+  /tag recarregar          (admin) recarrega o config.yml
+
+Permissoes: tag.usar (todos), tag.admin (OP)
+Cada tag tem sua permissao no config.yml (ex: tag.vip, tag.mod, tag.admin).
+
+Compilar: mvn package -> target/Tag-1.0.jar

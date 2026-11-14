@@ -1,0 +1,17 @@
+name: Tag
+version: 1.0
+main: com.exemplo.tag.TagPlugin
+api-version: "1.16"
+commands:
+  tag:
+    description: Escolha sua tag
+    usage: /tag <nome> | /tag lista | /tag remover
+    aliases: [tags]
+    permission: tag.usar
+permissions:
+  tag.usar:
+    description: Permite usar /tag
+    default: true
+  tag.admin:
+    description: Permite dar tags a outros jogadores e recarregar o config
+    default: op

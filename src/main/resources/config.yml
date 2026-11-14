@@ -1,0 +1,50 @@
+# A tag aparece em cima da cabeca do jogador e na lista do TAB.
+# As tags ficam na ordem abaixo: a ordem tambem define a ordem no TAB (a primeira aparece no topo).
+# "permissao" vazia = qualquer jogador pode usar.
+# "cor" = cor do nome do jogador (RED, GOLD, GREEN, AQUA, GRAY, WHITE, etc). Opcional.
+# Nao use os nomes: lista, remover, dar, recarregar.
+
+tags:
+  admin:
+    prefixo: "&c&l[ADMIN] "
+    cor: RED
+    permissao: "tag.admin"
+  mod:
+    prefixo: "&9&l[MOD] "
+    cor: BLUE
+    permissao: "tag.mod"
+  vip:
+    prefixo: "&6&l[VIP] "
+    cor: GOLD
+    permissao: "tag.vip"
+  membro:
+    prefixo: "&7[Membro] "
+    cor: GRAY
+    permissao: ""
+
+# true = quem nao escolheu tag recebe sozinho a primeira tag (da lista acima) cuja permissao ele tem
+automatica: true
+
+# Tag usada quando o jogador nao escolheu nenhuma e nao tem permissao de nenhuma outra (vazio = sem tag)
+padrao: "membro"
+
+# Prefixo de quem esta sem tag nenhuma
+sem-tag-prefixo: ""
+
+# Mostrar a tag tambem no chat (desligado para nao conflitar com outros plugins de chat)
+chat:
+  ativar: false
+  formato: "{tag}&f{player}&7: &f{msg}"
+
+mensagens:
+  tag-definida: "&aSua tag agora e: &f{tag}"
+  tag-removida: "&aSua tag foi removida."
+  tag-inexistente: "&cEssa tag nao existe. Use &f/tag lista&c."
+  sem-permissao-tag: "&cVoce nao tem permissao para usar essa tag."
+  lista-titulo: "&eTags disponiveis:"
+  jogador-offline: "&cJogador nao encontrado."
+  dar-sucesso: "&aTag de &f{jogador} &aalterada para &f{tag}&a."
+  dar-recebida: "&aUm administrador mudou sua tag para: &f{tag}"
+  recarregado: "&aConfig recarregada."
+  sem-permissao: "&cVoce nao tem permissao."
+  so-jogador: "Apenas jogadores podem usar este comando."
